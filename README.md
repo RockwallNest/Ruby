@@ -20,5 +20,5 @@ seq:  0.005141   0.000727   0.005868 (  0.005866)
 
 # Copyright
 # Copyright
-Copyright 2020 RockwallNest. This software is released under the MIT License. <br>
+Copyright &copy; 2020 RockwallNest. This software is released under the MIT License. <br>
 
