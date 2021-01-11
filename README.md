@@ -12,6 +12,8 @@ $ ruby fibo1.rb
 ##### fibo2.rbを実行
 $ ruby fibo2.rb
 
+####### (※)fibo1.rbのコメントアウトを除けば、Fibonacci数列を１００００項まで表示できます。
+
 # Benchmark result
 ### fibo1.rb
 |     |   user   |  system  |   total  |     real     | 
