@@ -1,4 +1,4 @@
-# Ruby-
+# Ruby
 自作rubyのプログラムなど
 
 # RactorをつかったFibonacciプログラムを作成
