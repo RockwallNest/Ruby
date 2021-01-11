@@ -5,6 +5,10 @@
 Ractorを使ったプログラムは、使ってないプログラムより、<br />
 時間軸で1140倍、速い処理速度です。
 
+# Requirement 
+ruby 3.0.0p0 [x86_64-darwin20]
+で動作確認済み。
+
 # Usage 
 $ git clone https://github.com/RockwallNest/Ruby-.git <br />
 $ cd Ruby/Ractor/ <br />
