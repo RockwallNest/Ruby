@@ -3,7 +3,7 @@
 
 ## RactorをつかったFibonacciプログラムを作成
 Ractorを使ったプログラムは、使ってないプログラムより、<br />
-時間軸で1140倍、速い処理速度です。
+Ractorを使わないプログラムだと、時間が1140倍余計にかかります...<br />
 
 # Requirement 
 ruby 3.0.0p0 [x86_64-darwin20]
@@ -13,9 +13,9 @@ ruby 3.0.0p0 [x86_64-darwin20]
 $ git clone https://github.com/RockwallNest/Ruby-.git <br />
 $ cd Ruby/Ractor/ <br />
 - ##### fibo1.rbを実行
-$ ruby fibo1.rb
+$ ruby fibo1.rb <br />
 - ##### fibo2.rbを実行
-$ ruby fibo2.rb
+$ ruby fibo2.rb <br />
 
 (※)fibo1.rbのコメントアウトを除けば、Fibonacci数列を10000項まで表示できます。
 
