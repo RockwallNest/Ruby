@@ -13,8 +13,8 @@ class Fibo
   # routine1
   $a, $b = 0, 1
   (1..N).each do 
-    pipe << $a
     $a, $b = $b, $a+$b
+    pipe << $a
   end
 
   # routine2
