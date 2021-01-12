@@ -19,7 +19,7 @@ class Fibo
 
   # routine2
   workers = Ractor.new pipe do |pipe|
-    while N
+    (1..N).each do
       n = pipe.take
       Ractor.yield n
     end
