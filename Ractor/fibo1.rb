@@ -17,21 +17,21 @@ class Fibo
     pipe << $a
   end
 
-  # routine2
-  workers = Ractor.new pipe do |pipe|
+  # routine2: generator
+  gen = Ractor.new pipe do |pipe|
     (1..N).each do
       n = pipe.take
       Ractor.yield n
     end
   end
 
-  # routine3
-  *sequence = (1..N).map {|i|
-    r, n = Ractor.select(*workers)
+  # routine3: extractor
+  *extr = (1..N).map {|i|
+    r, n = Ractor.select(*gen)
     [i, n]
   }.sort_by{|i, n| n}
 
-  # p *sequence
+  # p *extr
 
 end
 
@@ -39,13 +39,14 @@ Benchmark.bm do |x|
   x.report('seq') { Fibo }
 end
 
-# Fibo
+#Fibo
 
-# Ractor並列処理の図解です。 私見ですが...
+# Ractorの並列処理の図解です。
 #
-#  routine1                           routine2              routine3
-# ----------------                   ----------------      ------------------ 
-# | fibo routine | ---> channel ---> | take routine | ---> | select routine | ---> output
-# ----------------                   ----------------      ------------------
+#  routine1:fibo                     routine2: generator       routine3: extractor
+# ----------------      channel      -------------------      -------------------- 
+# | fibo routine | --->  pipe   ---> |  generator      | ---> |----------------->| ----> output n 
+# ----------------                   -------------------      | |                |
+#                                                             | --> ractor obj r |
+#                                                             --------------------
 #
-# 通常のFibo関数の約1140倍の処理速度です｡
