@@ -1,9 +1,12 @@
 # Ruby
 自作rubyのプログラムなど
 
-## RactorをつかったFibonacciプログラムを作成
+# Abstract
+### RactorをつかったFibonacci数列を掃き出すプログラムを作成
 Ractorを使ったプログラムは、使ってないプログラムより、<br />
-Ractorを使わないプログラムだと、時間が1140倍余計にかかります...<br />
+Ractorを使わないプログラムだと、時間が1140倍余計にかかります... <br />
+クラスメソッドを用いたプログラムfibo3.rbも追加しました。
+Ractorを用いないものより、すごく遅いですが... <br />
 
 # Requirement 
 ruby 3.0.0p0 [x86_64-darwin20]
@@ -30,6 +33,10 @@ $ ruby fibo2.rb <br />
 |---  |---       |---       |---       |---           |
 | seq | 0.005141 | 0.000727 | 0.005868 | (  0.005866) |
 
+### fibo3.rb
+|     |  user     |  system  |  total   |    real      |
+|---  |---        |---       |---       |---           |
+| seq | 0.083409  | 0.076613 | 0.160022 | (  0.091872) |
 
 # Copyright
 Copyright &copy; 2020 RockwallNest. This software is released under the MIT License. <br>
