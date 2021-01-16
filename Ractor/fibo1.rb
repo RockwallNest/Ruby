@@ -11,10 +11,10 @@ class Fibo
   end
 
   # routine1
-  $a, $b = 0, 1
+  @@a, @@b = 0, 1
   (1..N).each do 
-    $a, $b = $b, $a+$b
-    pipe << $a
+    @@a, @@b = @@b, @@a + @@b
+    pipe << @@a
   end
 
   # routine2: generator
