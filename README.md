@@ -3,10 +3,20 @@
 
 # Abstract
 ### RactorをつかったFibonacci数列を掃き出すプログラムを作成
+fibo1.rb, fibo2.rb, fibo3.rb <br />
+### Ractorを使った、Hash作成とFibonacci数列生成を並列実行するプログラムを作成
+concurrency.rb <br />
+
+# Report
+fibo1.rb, fibo2.rb <br />
 Ractorを使ったプログラムは、使ってないプログラムより、<br />
 Ractorを使わないプログラムだと、時間が1190倍余計にかかります... <br />
-クラスメソッドを用いたプログラムfibo3.rbも追加しました。
+クラスメソッドを用いたプログラムfibo3.rbも追加しました。<br />
+pipeをinitializerにして、メソッド間で共有できた。 <br/>
 Ractorを用いないものより、すごく遅いですが... <br />
+concurrency.rb <br />
+pipeをモジュール化したのが通ったので、ほっとした。<br />
+class同士の間でpipe共有ができるので、実行がはやくなったかな...　<br />
 
 # Requirement 
 ruby 3.0.0p0 [x86_64-darwin20]
