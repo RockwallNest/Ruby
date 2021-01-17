@@ -1,5 +1,5 @@
 # Ruby
-自作rubyのプログラムなど
+自作rubyのプログラムなど、Ractorの探索など。
 
 # Abstract
 ### RactorをつかったFibonacci数列を掃き出すプログラムを作成
