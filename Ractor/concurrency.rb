@@ -38,7 +38,7 @@ class HashDigest
 
     # extractor: 配列として値hdを抽出
     extrHd = ["Alice", "Bob", "Chris"].map do |name|
-      r, hd = Ractor.select(*genHd)
+      r, hd = Ractor.select(genHd)
       [name, hd]
     end
 
@@ -71,7 +71,7 @@ class Fibo
 
     # extractor 配列として値fを抽出
     extrF = (1..M).map do |i|
-      r, f = Ractor.select(*genF)
+      r, f = Ractor.select(genF)
       [i, f]
     end
   end
