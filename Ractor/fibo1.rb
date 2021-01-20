@@ -26,12 +26,12 @@ class Fibo
   end
 
   # routine3: extractor
-  *extr = (1..N).map {|i|
-    r, n = Ractor.select(*gen)
+  extr = (1..N).map {|i|
+    r, n = Ractor.select(gen)
     [i, n]
   }.sort_by{|i, n| n}
 
-  # p *extr
+  # p extr
 
 end
 
