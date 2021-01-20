@@ -31,7 +31,7 @@ class Fibo
     # Fibonacci extractor: Fibonacci数列を抽出
     # Ractor objectを捨てる。
     extr = (1..@n).map do |i|
-      r, x = Ractor.select(*gen)
+      r, x = Ractor.select(gen)
       [i, x]
     end
 
