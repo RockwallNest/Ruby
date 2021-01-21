@@ -43,7 +43,7 @@ class Fibo
 end 
 
 Benchmark.bm do |x|
-  x.report('') {
+  x.report('par') {
     Fibo
   }
 end
