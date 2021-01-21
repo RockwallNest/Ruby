@@ -10,13 +10,13 @@ concurrency.rb <br />
 ### characteristics
 pipe というRactorで作成したチャンネルを用いて、コードブロック同志を結びつけます。<br />
 ###### pipe 作成例
-"""ruby
+```ruby
 pipe = Ractor.new do 
   loop do 
      Ractor.yield Ractor.recv
   end
 end
-"""
+```
 このpipeチャンネルを用いて、メソッド間、クラス間のコードブロックを結びつけ、<br />
 並列実行を行うようにコードを設計します。<br />
 
