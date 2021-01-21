@@ -13,7 +13,7 @@ def fib
 end
 
 Benchmark.bm do |x|
-  x.report('seq:') { fib }
+  x.report('seq') { fib }
 end
 
 #fibo
