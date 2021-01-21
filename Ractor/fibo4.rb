@@ -36,7 +36,7 @@ class Fibo
  extr = (1..RN).each do |i|
    r, x = Ractor.select(*gen)
    [i, x] 
-   # [i, x]の代わりに実行すると表示
+   # [i, x]の代わりに実行するとFibonacci数列を表示
    # p [i, x] 
  end
 
@@ -48,5 +48,5 @@ Benchmark.bm do |x|
   }
 end
 
-# 表示用
+# Fibonacci数列表示用
 # Fibo 
