@@ -61,7 +61,7 @@ $ ruby fibo2.rb
 ### fibo1.rb
 |     |   user   |  system  |   total  |     real     | 
 |:---:|  :---:   |  :---:   |  :---:   |    :---:     |
-| seq | 0.000009 | 0.000004 | 0.000013 | (  0.000005) |
+| par | 0.000009 | 0.000004 | 0.000013 | (  0.000005) |
 
 ### fibo2.rb
 |     |  user    |  system  |   total  |     real     |
@@ -71,18 +71,18 @@ $ ruby fibo2.rb
 ### fibo3.rb
 |     |  user     |  system  |  total   |    real      |
 |:---:|  :---:    |  :---:   |  :---:   |    :---:     |
-| seq | 0.083409  | 0.076613 | 0.160022 | (  0.091872) |
+| par | 0.083409  | 0.076613 | 0.160022 | (  0.091872) |
 
 ### fibo4.rb
 
 |     |  user     |  system  |   total  |    real      |
 |:---:|  :---:    |  :---:   |  :---:   |   :---:      |
-| seq | 0.000008  | 0.000004 | 0.000012 | (  0.000004) |
+| par | 0.000008  | 0.000004 | 0.000012 | (  0.000004) |
 
 ### tarai.rb
 |     |  user     |  system  |   total  |    real      |
 |:---:|  :---:    |  :---:   |   :---:  |   :---:      |
-| seq | 0.000007  | 0.000003 | 0.000010 | (  0.000004) |
+| par | 0.000007  | 0.000003 | 0.000010 | (  0.000004) |
 
 # Copyright
 Copyright &copy; 2020 RockwallNest. This software is released under the MIT License. <br>
