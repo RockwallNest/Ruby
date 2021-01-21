@@ -43,7 +43,7 @@ class Fibo
 end 
 
 Benchmark.bm do |x|
-  x.report('seq') {
+  x.report('') {
     Fibo
   }
 end
