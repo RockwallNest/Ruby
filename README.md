@@ -33,6 +33,8 @@ Ractorを用いないものより、すごく遅いですが... <br />
 concurrency.rb <br />
 pipeをモジュール化したのが通ったので、ほっとした。<br />
 class同士の間でpipe共有ができるので、実行がはやくなったかな...　<br />
+fib(n)関数をRactorで処理してFibonacci数列を生成するコードを書いた。fibo4.rb <br />
+benchmarkは速いが、実際は遅い。<br />
 
 # Requirement 
 ruby 3.0.0p0 [x86_64-darwin20]
@@ -61,13 +63,19 @@ $ ruby fibo2.rb
 
 ### fibo2.rb
 |     |  user    |  system  |   total  |     real     |
-|---  |---       |---       |---       |---           |
+|:---:|  :---:   |  :---:   | :---:    | :---:        |
 | seq | 0.005141 | 0.000727 | 0.005868 | (  0.005866) |
 
 ### fibo3.rb
 |     |  user     |  system  |  total   |    real      |
-|---  |---        |---       |---       |---           |
+|:---:|   :---:   |  :---:   |  :---:   |    :---:     |
 | seq | 0.083409  | 0.076613 | 0.160022 | (  0.091872) |
+
+### fibo4.rb
+
+|     |  user     |  system  |   total  |    real      |
+|:---:| :---:     |  :---:   |  :---:   |   :---:      |
+| seq | 0.000008  | 0.000004 | 0.000012 | (  0.000004) |
 
 # Copyright
 Copyright &copy; 2020 RockwallNest. This software is released under the MIT License. <br>
