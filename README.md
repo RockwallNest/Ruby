@@ -35,7 +35,7 @@ pipeをモジュール化したのが通ったので、ほっとした。<br />
 class同士の間でpipe共有ができるので、実行がはやくなったかな...　<br />
 fib(n)関数をRactorで処理してFibonacci数列を生成するコードを書いた。fibo4.rb <br />
 benchmarkは速いが、実際は遅い。<br />
-竹内関数を処理するpipeを用いたコードを書いた。意外に速かった。<br />
+竹内関数を処理するpipeを用いたコードを書いた。意外に速かった。tarai.rb <br />
 引用：[ruby-lang.org Ruby 3.0.0 リリース　より](https://www.ruby-lang.org/ja/news/2020/12/25/ruby-3-0-0-released/)
 
 # Requirement 
