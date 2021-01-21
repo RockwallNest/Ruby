@@ -7,6 +7,17 @@ fibo1.rb, fibo2.rb, fibo3.rb <br />
 ### Ractorを使った、Hash作成とFibonacci数列生成を並列実行するプログラムを作成
 concurrency.rb <br />
 
+### characteristics
+pipe というRactorで作成したチャンネルを用いて、コードブロック同志を結びつけます。<br />
+###### pipe 作成例
+> pipe = Ractor.new do 
+>   loop do 
+>     Ractor.yield Ractor.recv
+>   end
+> end
+このpipeチャンネルを用いて、メソッド間、クラス間のコードブロックを結びつけ、<br />
+並列実行を行うようにコードを設計します。<br />
+
 # Report
 fibo1.rb, fibo2.rb <br />
 Ractorを使ったプログラムは、使ってないプログラムより、<br />
