@@ -39,13 +39,18 @@ ruby 3.0.0p0 [x86_64-darwin20]
 で動作確認済み。
 
 # Usage 
-$ git clone https://github.com/RockwallNest/Ruby-.git <br />
-$ cd Ruby/Ractor/ <br />
+```
+$ git clone https://github.com/RockwallNest/Ruby-.git 
+$ cd Ruby/Ractor/ 
+```
 - ##### fibo1.rbを実行
+```
 $ ruby fibo1.rb <br />
+```
 - ##### fibo2.rbを実行
+```
 $ ruby fibo2.rb <br />
-
+```
 (※)fibo1.rbのコメントアウトを除けば、Fibonacci数列を10000項まで表示できます。
 
 # Benchmark result
