@@ -20,7 +20,7 @@ end
 このpipeチャンネルを用いて、メソッド間、クラス間のコードブロックを結びつけ、<br />
 並列実行を行うようにコードを設計しました。<br />
 ###### 引用
-[Ractor - Ruby's Actor-like concurrent abstraction](https://docs.ruby-lang.org/en/master/doc/ractor_md.html)
+[Ractor - Ruby's Actor-like concurrent abstraction　より](https://docs.ruby-lang.org/en/master/doc/ractor_md.html)
 
 
 # Report
@@ -36,6 +36,7 @@ class同士の間でpipe共有ができるので、実行がはやくなった�
 fib(n)関数をRactorで処理してFibonacci数列を生成するコードを書いた。fibo4.rb <br />
 benchmarkは速いが、実際は遅い。<br />
 竹内関数を処理するpipeを用いたコードを書いた。意外に速かった。<br />
+引用：[ruby-lang.org Ruby 3.0.0 リリース　より](https://www.ruby-lang.org/ja/news/2020/12/25/ruby-3-0-0-released/)
 
 # Requirement 
 ruby 3.0.0p0 [x86_64-darwin20]
