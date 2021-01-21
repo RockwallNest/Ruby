@@ -11,7 +11,7 @@ concurrency.rb <br />
 pipe というRactorで作成したチャンネルを用いて、コードブロック同志を結びつけます。<br />
 ###### pipe 作成例
 ```ruby
-pipe = Ractor.new pipe do |pipe| 
+pipe = Ractor.new do
   loop do 
      Ractor.yield Ractor.recv
   end
