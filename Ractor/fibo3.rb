@@ -41,7 +41,7 @@ end
 
 # N などの定数を利用するよりも遅くなったけど... 一応できた。
 Benchmark.bm do |x|
-  x.report('seq') {
+  x.report('') {
     fibo = Fibo.new(10000)
     fibo.fib
   }
