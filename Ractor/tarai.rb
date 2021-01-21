@@ -35,5 +35,5 @@ class Tarai
 end
 
 Benchmark.bm do |x| 
-  x.report('seq') { Tarai }
+  x.report('') { Tarai }
 end
