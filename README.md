@@ -35,6 +35,7 @@ pipeをモジュール化したのが通ったので、ほっとした。<br />
 class同士の間でpipe共有ができるので、実行がはやくなったかな...　<br />
 fib(n)関数をRactorで処理してFibonacci数列を生成するコードを書いた。fibo4.rb <br />
 benchmarkは速いが、実際は遅い。<br />
+竹内関数を処理するpipeを用いたコードを書いた。意外に速かった。<br />
 
 # Requirement 
 ruby 3.0.0p0 [x86_64-darwin20]
@@ -76,6 +77,11 @@ $ ruby fibo2.rb
 |     |  user     |  system  |   total  |    real      |
 |:---:|  :---:    |  :---:   |  :---:   |   :---:      |
 | seq | 0.000008  | 0.000004 | 0.000012 | (  0.000004) |
+
+### tarai.rb
+|     |  user     |  system  |   total  |    real      |
+|:---:|  :---:    |  :---:   |   :---:  |   :---:      |
+| seq | 0.000007  | 0.000003 | 0.000010 | (  0.000004) |
 
 # Copyright
 Copyright &copy; 2020 RockwallNest. This software is released under the MIT License. <br>
