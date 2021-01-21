@@ -45,11 +45,11 @@ $ cd Ruby/Ractor/
 ```
 - ##### fibo1.rbを実行
 ```
-$ ruby fibo1.rb <br />
+$ ruby fibo1.rb 
 ```
 - ##### fibo2.rbを実行
 ```
-$ ruby fibo2.rb <br />
+$ ruby fibo2.rb 
 ```
 (※)fibo1.rbのコメントアウトを除けば、Fibonacci数列を10000項まで表示できます。
 
