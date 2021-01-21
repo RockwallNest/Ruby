@@ -19,6 +19,9 @@ end
 ```
 このpipeチャンネルを用いて、メソッド間、クラス間のコードブロックを結びつけ、<br />
 並列実行を行うようにコードを設計しました。<br />
+###### 引用
+[Ractor - Ruby's Actor-like concurrent abstraction](https://docs.ruby-lang.org/en/master/doc/ractor_md.html)
+
 
 # Report
 fibo1.rb, fibo2.rb <br />
