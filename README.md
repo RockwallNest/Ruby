@@ -5,7 +5,7 @@
 ### RactorをつかったFibonacci数列を掃き出すプログラムを作成
 fibo1.rb, fibo2.rb, fibo3.rb <br />
 ### Ractorを使った、Hash作成とFibonacci数列生成を並列実行するプログラムを作成
-concurrency.rb <br />
+parallel.rb <br />
 
 ### characteristics
 pipe というRactorで作成したチャンネルを用いて、コードブロック同志を結びつけます。<br />
@@ -30,7 +30,7 @@ Ractorを使わないプログラムだと、時間が1190倍余計にかかり�
 クラスメソッドを用いたプログラムfibo3.rbも追加しました。<br />
 pipeをinitializerにして、メソッド間で共有できた。 <br/>
 Ractorを用いないものより、すごく遅いですが... <br />
-concurrency.rb <br />
+parallel.rb <br />
 pipeをモジュール化したのが通ったので、ほっとした。<br />
 class同士の間でpipe共有ができるので、実行がはやくなったかな...　<br />
 fib(n)関数をRactorで処理してFibonacci数列を生成するコードを書いた。fibo4.rb <br />
